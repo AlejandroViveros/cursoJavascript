@@ -1,24 +1,31 @@
 
-
-
-
-var c = {
-
+var persona = {
 	nombre: "Carito",
-	apellido: "Vejar",
-	edad: "17"
+	apellido: "vejar",
+	edad: 26,
+	direccion:{
+		pais: "chile",
+		ciudad: "santiago",
+		edificio: {
+			nombre: "edificio principal",
+			telefono: "2222222-2"
+		}
+	}
 };
 
-var d = c;
+console.log(persona.direccion.pais);
+console.log(persona.direccion );
 
-console.log("caritoC: ", c );
-console.log("caritoD: ", d);
+persona.direccion.zipcode = 11101;
+console.log(persona.direccion.zipcode);
 
-c.apellido= "Calluan";
-
-console.log("caritoC: ", c );
-console.log("caritoD: ", d);
+console.log( persona.direccion.edificio.telefono);
 
 
+var edificio = persona.direccion.edificio;
+
+edificio.nopiso = "8vo piso";
+
+console.log(persona);
 
 
