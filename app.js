@@ -1,20 +1,29 @@
 
-var persona = {
-	nombre: "Carito",
-	apellido: "vejar",
-	edad: 26,
-	direccion:{
-		pais: "chile",
-		ciudad: "santiago",
-		edificio: {
-			nombre: "edificio principal",
-			telefono: "2222222-2"
-		}
-	}
-};
 
-var campo ="edad";
 
-console.log(  persona[campo] );
+
+function imprimir(persona1, persona2) {
+	console.log(persona1.nombre+ " " + persona1.apellido);
+	persona1.nombre = "leo";
+	persona2="judith"
+	console.log(persona2);
+	
+	console.log(persona1.nombre+ " " + persona1.apellido);
+}
+
+let a={
+	nombre: "Alejandro",
+	apellido:"viveros"
+}
+
+let b= "ponce";
+
+imprimir(a,b)
+
+
+console.log(a);
+console.log(b);
+
+
 
 
