@@ -60,5 +60,27 @@ var nuevaFuncion = creaFuncion();
 var segundaFuncion = nuevaFuncion( persona.nombre );
 segundaFuncion();
 
+function retornoMaldito(){
+	return function(){
+		console.log("alejandro mi pololo");
 
+		return function(){
+			console.log("carito mi polola");
+			
+			return function (){
+				console.log("mama comprame una tablet");
+			}
+		}
+
+	}
+}
+
+
+var retorno1 = retornoMaldito();
+var retorno2 = retorno1();
+var retorno3 = retorno2();
+
+retorno1();
+retorno2();
+retorno3();
 
