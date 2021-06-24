@@ -36,7 +36,7 @@ function crearPersona(nombre, apellido){
 
 	}
 }
-//se define variable que sera igual al retorno de la
+//se define variable que sera igual al retorno de la funcion
 var persona= crearPersona("maria", "paz")
 // console.log(persona.nombre);
 // console.log(persona.apellido);
