@@ -2,28 +2,21 @@
 
 
 
-function imprimir(persona1, persona2) {
-	console.log(persona1.nombre+ " " + persona1.apellido);
-	persona1.nombre = "leo";
-	persona2="judith"
-	console.log(persona2);
-	
-	console.log(persona1.nombre+ " " + persona1.apellido);
+function imprimir( fn ){
+
+fn();
+
+
+
 }
 
-let a={
-	nombre: "Alejandro",
-	apellido:"viveros"
+var persona ={
+	nombre:"juan",
+	apellido:"padilla"
 }
 
-let b= "ponce";
+var miFuncion = function(){
+	console.log("miFuncion");
+}
 
-imprimir(a,b)
-
-
-console.log(a);
-console.log(b);
-
-
-
-
+imprimir(miFuncion);
