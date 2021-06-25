@@ -9,6 +9,7 @@ function a(){
 a();
 
 a.nombre ="Maria";
+//a.name ="Maria"; 
 
 //tener precaucion con las propiedades reservadas por el sistema
 //en este ejemplo profesor intenta modificar propiedad name de la 
